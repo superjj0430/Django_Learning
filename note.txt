@@ -1,0 +1,54 @@
+教學網站:
+    https://devdocs.io/html/
+    https://www.w3schools.com/html/
+    https://developer.mozilla.org/zh-TW/docs/Web/HTML
+
+HTML基本格式:
+    html file 用<head></head>包裹網頁資訊
+        head裡可放<style>來指定網頁相關格式(css style)
+    <body></body>放網頁上的物件
+
+
+相關語法:
+    <p> 段落
+    <ul> 為無序list，用<li>存放list內容，可list中再list
+    <em> 強調文字
+    <strong> 文字變粗體
+    <ol> 有序list
+
+
+顯示圖片:
+    <img src="371631.jpg" alt="image demo">
+    src 檔案位置或網址
+    alt 圖片名稱
+
+超連結:
+    <a href="https://www.google.com.tw/?hl=zh_TW">Google</a>
+
+創建表格:
+    <table border="2">(border=邊界寬度)
+        <tr>(行)
+            <td>2001~2018</td>(列)
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>
+                twitter
+            </td>
+        </tr>
+    </table>
+
+網頁相關控件的美編或調整通常會透過css去修改
+
+內嵌css:
+    透過在空件後加style與css語法
+
+internal css:
+    在head內部加style並指定使用範圍
+
+External css:
+    創建.cssfile並在html的head中透過link去匯入css
+
+可在空件後加class作區別，並用external css file去做更精確的指定
+也可透過id去作區別，id值為唯一值
+一個class可有多個空件，ID只能有一個
