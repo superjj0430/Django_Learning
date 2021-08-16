@@ -1,0 +1,26 @@
+項目初始化:
+    django-admin startproject 名稱
+        >生成django專案
+
+    python manage.py migrate
+        >數據庫初始化
+
+    python manage.py runserver
+        >啟動django伺服器
+    
+    python manage.py startapp 名稱
+        >生成app(功能)
+        >models.py對應數據庫操作
+        views.py代碼邏輯所在
+    
+    資料庫設置>mysql
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_mysite',
+        'USER': 'root',
+        'PASSWORD': 'index50710',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
+    }
+}
