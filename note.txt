@@ -52,3 +52,31 @@ External css:
 可在空件後加class作區別，並用external css file去做更精確的指定
 也可透過id去作區別，id值為唯一值
 一個class可有多個空件，ID只能有一個
+
+
+# from 晏廷
+這個 github提供 dijango 整合 bootstrap 的 sb-admin 模版 專案範例
+包括了 ORM 跟 SQLite 整合
+https://github.com/app-generator/django-dashboard-sb-admin
+
+資料庫連線相關
+    我們還需要安裝 SSMS 來連線至IT架設的 QC Database  (MS SQLSERVER)
+https://docs.microsoft.com/zh-tw/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+
+
+
+.Net 簡易Sample ===============
+using System.Data;
+using System.Data.SqlClient;
+
+  connStr = “Data Source=tcp:auoleddw01.database.windows.net,1433;Initial Catalog=auoleddwprod;User ID=<userid>;Password=<userpwd>;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False”;
+_conn = new SqlConnection(connStr);
+SqlCommand cmd = new SqlCommand(“select * from rd_microLED.VND_FILE_R ”, _conn);
+DataTable dt = new DataTable();
+SqlDataAdapter da = new SqlDataAdapter(cmd);
+da.Fill(dt);
+return dt
+===============
+使用工具 SSMS (Sql Server management Studio)
+連線資訊
+
